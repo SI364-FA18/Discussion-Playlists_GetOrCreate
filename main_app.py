@@ -147,6 +147,7 @@ def get_or_create_playlist(db_session, playlist_title, selected_songs):
             playlist.songs.append(s)
         db_session.add(playlist)
         db_session.commit()
+        return playlist
 
 
 
